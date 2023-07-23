@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    /* outline: dotted tomato; */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* ----- NAVBAR ----- */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F55A5A;
+    color: #FFF;
+}
+
+.nav--logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5em;
+}
+
+.nav--title {
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-block: 1.5em;
+}
+
+/* ----- CARDS ----- */
+
+.card {
+    display: flex;
+    gap: 1em;
+    width: 80%;
+    margin: 0 auto;
+    min-width: 400px;
+    max-width: 800px;
+}
+
+.card:first-child {
+    margin-top: 2em;
+}
+
+.card:not(:last-child) {
+    padding-block: 1em;
+    border-bottom: 1px solid #F5F5F5; /* Adjust as needed */
+}
+
+.card:last-child {
+    padding-block: 1em;
+}
+
+.card--location,
+.card--title,
+.card--travel_date,
+.card--description {
+    margin: 0;
+}
+
+.card--image {
+    flex: 1;
+    width: 125px;
+    height: 168px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.card--text_container {
+    flex: 2.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card--top_container {
+    margin-block: 0.5em;
+}
+
+.location-container {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.card--location_icon {
+    width: 0.6em;
+}
+
+.card--location {
+    color: #2B283A;
+    font-size: 0.65em;
+    font-weight: 400;
+    letter-spacing: 1.741px;
+    text-transform: uppercase;
+}
+
+.card--map_url {
+    color: #918E9B;
+    font-size: 0.65em;
+}
+
+.card--title {
+    font-size: 1.56em;
+    color: #2B283A;
+    padding-block: 0.25em
+}
+
+.travel-date-container {
+    display: flex;
+    gap: 0.5em;
+    font-size: 0.65em;
+    font-weight: 700;
+    margin-top: 1em;
+    padding-block: 0.25em;
+}
+
+.card--description {
+    font-size: 0.65em;
+    color: #2B283A;
+    padding-block: 0.5em;
+    line-height: 150%;
+}
